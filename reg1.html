@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Booking Registration</title>
+
+    <link rel="stylesheet" href="reg.css">
+
+
+
+    <script>
+
+        function password()
+        {
+            var p=document.getElementById("pass").value;
+			var c_p=document.getElementById("cpass").value;
+
+            if(p != c_p)
+				{
+					alert("Password And Confirm Password Are Must Be Same ");
+										
+				}
+
+        }
+
+        function mobile()
+        {
+            var m=document.getElementById("mo").value;
+
+            if(m.lenght>10)
+				{
+					alert("pls enter valide Mobile Number");
+				}
+                else if(m.lenght<=9)
+				{
+					alert("pls enter valide Mobile Number");
+				}
+
+        }
+
+		function fname1()
+		{
+			
+			var fn=document.getElementById("fname").value;
+			
+			
+			
+				if(fn.lenght<=2)
+				{
+					alert("pls Enter Valide Name");	
+				}
+				else if(fn.lenght>20)
+				{
+					alert("Name Is To Long");
+					
+				}
+				
+
+		}
+
+        function lname()
+		{
+			
+			var ln=document.getElementById("lname").value;
+	
+				 if(ln.lenght<=2)
+				{
+					alert("pls Enter Valide Name");
+					
+				}
+				else if(ln.lenght>20)
+				{
+					alert("Name Is To Long");
+					
+				}
+				
+		}
+
+
+        function email()
+		{
+			
+			var e=document.getElementById("email").value;
+			
+			
+		}
+
+        function singup()
+        {
+         
+			var p=document.getElementById("pass").value;
+			var c_p=document.getElementById("c_pass").value;
+			var fn=document.getElementById("fname").value;
+			var ln=document.getElementById("lname").value;
+			var e=document.getElementById("email").value;
+			var m=document.getElementById("m_number").value;
+			
+				if(fn.lenght<=2)
+				{
+					alert("pls Enter Valide Name");	
+				}
+				else if(fn.lenght>20)
+				{
+					alert("Name Is To Long");
+					
+				}
+				else if(ln.lenght<=2)
+				{
+					alert("pls Enter Valide Name");
+					
+				}
+				else if(ln.lenght>20)
+				{
+					alert("Name Is To Long");
+					
+				}
+				
+				else if(m.lenght<=9)
+				{
+					alert("pls enter valide Mobile Number");
+				}
+				else if(m.lenght>10)
+				{
+					alert("pls enter valide Mobile Number");
+				}
+				else if(p != c_p)
+				{
+					alert("Password And Confirm Password Are Must Be Same ");
+										
+				}
+				
+				else
+				{
+					return true;
+					alert("Sing Up Success")
+					window.location="Login.html";
+				}
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="registration-container">
+        
+        <h1>Create an Account</h1>
+
+        <div class="registration-container2">
+
+            <form action="registration_form.php" method="post">
+
+                <label for="fname" class="gender" >First Name:</label>
+                <input type="text" id="fname" name="fname" onblur="fname1 ()">
+
+                <label for="mname" class="gender" >Middel Name:</label>
+                <input type="text" id="mname" name="mname" >
+                
+                <label for="lname" class="gender" >Last Name:</label>
+                <input type="text" id="lname" name="lname" onblur="lname ()">
+
+                <label for="email" class="label1" >Email:</label>
+                <input type="email" id="email" name="email" onblur="email ()">
+
+                <label for="mo" class="label1" >Mobile Number:</label>
+                <input type="text" id="mo" name="mo" onblur="mobile ()">
+
+                <label for="city" class="label1">City:</label>
+                <input type="text" id="city" name="city" >
+
+                <label for="pincode" class="label1">Pincode:</label>
+                <input type="text" id="pincode" name="pincode" >
+                
+                <label for="gender1" class="gender">Gender : </label>
+
+                    <select name="gender" class="gender">gender:
+
+                    <option value="male">Male</option>
+
+                    <option value="female">Female</option>
+
+                    <option value="other">Other</option>
+
+                    </select>
+               
+
+                <label for="addres" class="label2" >Address:</label>
+                <input type="text" id="addres" name="addres">
+
+                <label for="password" class="label1">Password:</label>
+                <input type="text" id="pass" name="pass" >
+
+                <label for="cpass" class="label1">Confirm Password:</label>
+                <input type="text" id="cpass" name="cpass" onblur="password ()">
+
+
+
+                <button type="submit" onfocus="singup()">Register</button>
+
+            </form>
+
+        </div>
+
+     </div>
+
+</body>
+
+</html>

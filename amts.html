@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="admin01.css">
+</head>
+
+<style>
+
+a
+{
+    text-decoration: none;
+    font-family: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+</style>
+<body>
+    <div class="container">
+
+        <aside class="sidebar">
+
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="admin.php"><i class="fas fa-tachometer-alt"></i> Admin Page</a></li>
+                <li><a href="seeamts.php"><i class="fas fa-ticket-alt"></i> See Details </a></li>
+                
+            </ul>
+        </aside>
+
+        <main class="main-content">
+
+            <header>
+                <h1>Add AMTS Details , Admin</h1>
+            </header>
+
+
+            <form action="amts_form.php" method="post">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                    
+                <label for="start_time">Start Time:</label>
+                <input type="time" id="start_time" name="start_time" required>
+    
+                <label for="end_time">End Time:</label>
+                <input type="time" id="end_time" name="end_time" required>
+    
+                <label for="from">From:</label>
+                <input type="text" id="from" name="from" required>
+
+                <label for="to">To:</label>
+                <input type="text" id="to" name="to" required>
+
+                <label for="routeNo">Route No:</label>
+                <input type="text" id="routeNo" name="routeNo" required>
+    
+                <button type="submit">Add to List</button>
+
+            </form>
+
+            <br>
+
+            <footer>
+                <p>© 2024 Online Ticket Reservation System</p>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>

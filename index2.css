@@ -1,0 +1,14 @@
+body{
+    padding:00px;
+    margin:00px;
+}
+.nav
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.profile
+{
+    width:5%;
+}

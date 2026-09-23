@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Ticket Booking Platform</h1>
+        <p>Book your tickets hassle-free!</p>
+    </header>
+
+    <section class="search-form">
+        <label for="from">From:</label>
+        <input type="text" id="from" placeholder="Enter departure location">
+
+        <label for="to">To:</label>
+        <input type="text" id="to" placeholder="Enter destination location">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+
+        <button onclick="searchBuses()">Search Buses</button>
+    </section>
+
+    <footer>
+        <p>© 2024 Ticket Booking Platform</p>
+    </footer>
+
+    <script>
+        function searchBuses() {
+            const from = document.getElementById("from").value;
+            const to = document.getElementById("to").value;
+            const date = document.getElementById("date").value;
+
+            // Implement your search logic here (e.g., API calls, database queries)
+            console.log(`Searching buses from ${from} to ${to} on ${date}`);
+        }
+    </script>
+
+    <style>
+
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.search-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+    
+</body>
+</html>

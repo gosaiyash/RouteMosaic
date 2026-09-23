@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="admin01.css">
+</head>
+
+<style>
+
+a
+{
+    text-decoration: none;
+    font-family: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+</style>
+<body>
+    <div class="container">
+
+        <aside class="sidebar">
+
+            <h2>Admin Dashboard</h2>
+            <ul>
+
+                <li><a href="admin.php"><i class="fas fa-tachometer-alt"></i> ADMIN PAGE</a></li>
+                <li><a href="plan.html"><i class="fas fa-ticket-alt"></i> AIR-PLAN</a></li> 
+                <li><a href="metro.html"><i class="fas fa-tachometer-alt"></i> METRO</a></li>
+                <li><a href="train.html"><i class="fas fa-ticket-alt"></i> TRAIN</a></li>
+                <li><a href="amts.html"><i class="fas fa-users"></i> AMTS</a></li>
+                <li><a href="gsrtc.html"><i class="fas fa-cogs"></i> GSRTC</a></li>
+                <li><a href="brts.html"><i class="fas fa-cogs"></i> BRTC</a></li>
+
+            </ul>
+        </aside>
+
+        <main class="main-content">
+
+            <header>
+                <h1>See Details , Admin</h1>
+            </header>
+
+            <section id="Plan" class="card">
+                <a href="products.html"> <h2>See product Details</h2>
+                    <p>product</p></a>
+                </section>
+
+                <section id="Plan" class="card">
+                    <a href="seeplan.php"> <h2>See Plan Details</h2>
+                        <p>Plan</p></a>
+                    </section>
+    
+                <section id="Metro" class="card">
+                <a href="seemetro.php"> <h2>See Metro Details</h2>
+                    <p>Metro</p></a>
+                </section>
+    
+                <section id="Train" class="card">
+                <a href="seetrain.php"><h2>See Train Details</h2>
+                    <p>Train</p></a>
+                </section>
+    
+                <section id="AMTS" class="card">
+                   <a href="seeamts.php"> <h2>See AMTS Details</h2>
+                    <p>AMTS</p></a>
+                </section>
+
+                <section id="GSRTC" class="card">
+                    <a href="seegsrtc.php"> <h2>See GSRTC Details</h2>
+                        <p>GSRTC</p></a>
+                    </section>
+        
+                    <section id="BRTS" class="card">
+                    <a href="seebrts.php"> <h2>See BRTS Details</h2>
+                        <p>BRTS</p></a>
+                    </section>
+        
+                
+
+            <footer>
+                <p>© 2024 Online Ticket Reservation System</p>
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
